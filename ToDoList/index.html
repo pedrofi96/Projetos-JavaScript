@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!--Link CSS:-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Script, não precisa estar no final por causa do comando defer-->
+    
+    <!--Fontes do projeto: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Lista de Tarefas:</h2>
+      </header>
+      <form id="todo-form" method="post" role="form">
+        <p>Adicionar tarefa:</p>
+        <div class="form-control">
+          <input
+            type="text"
+            name="tarefas"
+            id="todo-input"
+            placeholder="O que você vai fazer?"
+            data-rule=""
+            data-msg=""
+          />
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+      <form id="edit-form" class="hide">
+        <p>Edite a sua tarefa:</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button type="submit">Editar Tarefa</button>
+        </div>
+        <br />
+        <button id="cancelEditBtn">Cancelar</button>
+      </form>
+      
+      <div class="todo">
+        <div class="todo-list"  >
+          <h3 >Estudar!!!</h3>
+          <button class="finish-todo">terminar</button>
+          <button class="Editar-todo">Editar</button>
+          <button class="Remove-todo">Remover</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <script src="main.js"></script>
+  </body>
+</html>

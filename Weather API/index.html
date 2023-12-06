@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API trial</title>
+  <!--JS e CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <div class="form">
+    <h3>Confira o clima de uma cidade:</h3>
+    <div class="form-input-container">
+      <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+      <button id="search">
+        <img src="img/lupa.png" width="20px" alt="Buscar">
+      </button>
+    </div>
+  <div id="weather-data" class="hide">
+    <h2>
+      <span id="city"></span>
+      <img src="" alt="bandeira do país" id="country">
+    </h2>
+    <p id="temperature"><span></span>&deg;C</p>
+    <div id="description-container">
+      <div id="description">Nublado</div>
+      <img src="" alt="condições do tempo" id="weather-icon">
+    </div>
+    <div id="details-container">
+      <p id="humidity">
+        <span></span>
+      </p>
+      <p id="wind">
+        <span></span>
+      </p>
+    </div>
+
+  </div>  
+
+
+  </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
